@@ -1,0 +1,263 @@
+	<!-- Login後のNavigationBar -->
+	<login-nav></login-nav>
+	<div class="row">
+		<div class="col s12 m3 l3">
+			<!-- ユーザ情報の表示 -->
+			<div class="card">
+				<!-- ユーザの画像 -->
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/yeoman.png">
+				</div>
+				<div class="card-content">
+					<!-- ユーザ名 -->
+					<span class="card-title activator grey-text text-darken-4">ふぇれっと<i class="material-icons right">more_vert</i></span>
+					<ul style="display:block;width:100%">
+					<!-- フォローフォロワー情報 -->
+						<li style="display:block;float:left;width:50%">
+							follow
+						</li>
+						<li style="display:block;float:left;width:50%">
+							follower
+						</li>
+						<li style="display:block;float:left;width:50%">
+							100
+						</li>
+						<li style="display:block;float:left;width:50%">
+							210
+						</li>	
+					</ul>
+					&nbsp;
+				</div>
+				<!-- ユーザのプロフィール -->
+				<div class="card-reveal">
+					<span class="card-title grey-text text-darken-4">Profile<i class="material-icons right">close</i></span>
+					<p>
+					</p>
+				</div>
+			</div>
+			
+			<!-- 各種ページの遷移メニューの表示 -->
+			<ul class="collection with-header" style="margin-top:12px;">
+				<li class="collection-header"><a href="./#/mypage/user_info"><h6>ふぇれっと</h6></a></li>
+				<li><a href="./#/mypage" class="collection-item">タイムライン</a></li>
+				<li><a href="./#/mypage/music_search" class="collection-item active">曲を探す</a></li>
+				<li><a href="./#/mypage/myplaylist" class="collection-item">MyMusic</a></li>
+				<li><a href="./#/mypage/myplaylist" class="collection-item">MyPlayList</a></li>
+				<li><a href="./#/mypage/favoriteplaylist" class="collection-item">FavoriteMusic</a></li>
+				<li><a href="./#/mypage/favoriteplaylist" class="collection-item">FavoritePlayList</a></li>
+			</ul>
+			<!-- ジャンルの表示 -->
+			<ul class="collapsible" data-collapsible="accordion">
+				<li>
+					<div class="collapsible-header">
+						ジャンル
+					</div>
+					<div class="collapsible-body">
+						<ul class="collection">
+							<li><a href="./#/mypage/music_search" class="collection-item active">J-POP</a></li>
+							<li><a href="#!" class="collection-item">K-POP</a></li>
+							<li><a href="#!" class="collection-item">R&amp;B</a></li>
+							<li><a href="#!" class="collection-item">Rock</a></li>
+							<li><a href="#!" class="collection-item">PunkRock</a></li>
+							<li><a href="#!" class="collection-item">EDM</a></li>
+							<li><a href="#!" class="collection-item">Techno</a></li>
+							<li><a href="#!" class="collection-item">House</a></li>
+							<li><a href="#!" class="collection-item">HipHop</a></li>
+							<li><a href="#!" class="collection-item">Reggae</a></li>
+							<li><a href="#!" class="collection-item">Metal</a></li>
+							<li><a href="#!" class="collection-item">Jazz</a></li>
+							<li><a href="#!" class="collection-item">Classical</a></li>
+							<li><a href="#!" class="collection-item">Country</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<!-- プレイリストの表示 -->
+			<ul class="collapsible" data-collapsible="accordion">
+				<li>
+					<div class="collapsible-header">
+						プレイリスト
+					</div>
+					<div class="collapsible-body">
+						<ul class="collection">
+							<li><a href="./#/mypage/music_search" class="collection-item">J-POP</a></li>
+							<li><a href="#!" class="collection-item">K-POP</a></li>
+							<li><a href="#!" class="collection-item">R&amp;B</a></li>
+							<li><a href="#!" class="collection-item">Rock</a></li>
+							<li><a href="#!" class="collection-item">PunkRock</a></li>
+							<li><a href="#!" class="collection-item">EDM</a></li>
+							<li><a href="#!" class="collection-item">Techno</a></li>
+							<li><a href="#!" class="collection-item">House</a></li>
+							<li><a href="#!" class="collection-item">HipHop</a></li>
+							<li><a href="#!" class="collection-item">Reggae</a></li>
+							<li><a href="#!" class="collection-item">Metal</a></li>
+							<li><a href="#!" class="collection-item">Jazz</a></li>
+							<li><a href="#!" class="collection-item">Classical</a></li>
+							<li><a href="#!" class="collection-item">Country</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="col s12 m9 l9">
+			<!-- 並び替え機能の表示 -->
+			<ul class="collection">
+				<li class="collection-item">
+					<h5>表示設定</h5>
+					<form action="" method="GET">
+						<table>
+							<tr>
+								<td>	
+									<input name="sort" type="radio" id="good" checked>
+									<label for="good">いいねが多い順</label>
+								</td>
+								<td>
+									<input name="between" type="radio" id="nothing" checked>
+									<label for="nothing">指定なし</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input name="sort" type="radio" id="timestamp">
+									<label for="timestamp">投稿日時が新しい順</label>
+								</td>
+								<td>
+									<input name="between" type="radio" id="a_day">
+									<label for="a_day">24時間以内</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input name="sort" type="radio" id="mylist">
+									<label for="mylist">マイリス数が多い順</label>
+								</td>
+								<td>
+									<input name="between" type="radio" id="a_week">
+									<label for="a_week">1週間以内</label>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</li>
+			</ul>
+			
+			<!-- プレイリストおよびトラックの表示 -->
+			<ul class="collection with-header" style="margin-top:12px;">
+				<li class="collection-header"><h6>プレイリストランキング</h6></li>
+				<li class="collection-item avatar">
+					<img src="images/yeoman.png" alt="" class="circle">
+					<span class="title">Title</span>
+					<p>First Line <br>
+						Second Line
+					</p>
+					<!--<a href="#!"><i class="material-icons">grade</i></a>-->
+					<ul style="display:block">
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">playlist_add</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">thumb_up</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">chat_bubble_outline</i>2</a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">launch</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+						</li>
+					</ul>
+					&nbsp;
+					<!--<a href="#!"><i class="material-icons">library_music</i></a>-->
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle">folder</i>
+					<span class="title">Title</span>
+					<p>First Line <br>
+					 Second Line
+					</p>
+					<!--<a href="#!"><i class="material-icons">grade</i></a>-->
+					<ul style="display:block">
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">playlist_add</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">thumb_up</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">chat_bubble_outline</i>2</a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">launch</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+						</li>
+					</ul>
+					&nbsp;
+					<!--<a href="#!"><i class="material-icons">library_music</i></a>-->
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle green">insert_chart</i>
+					<span class="title">Title</span>
+					<p>First Line <br>
+						Second Line
+					</p>
+					<!--<a href="#!"><i class="material-icons">grade</i></a>-->
+					<ul style="display:block">
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">playlist_add</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">thumb_up</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">chat_bubble_outline</i>2</a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">launch</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+						</li>
+					</ul>
+					&nbsp;
+					<!--<a href="#!"><i class="material-icons">library_music</i></a>-->
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle red">play_arrow</i>
+					<span class="title">Title</span>
+					<p>First Line <br>
+						Second Line
+					</p>
+					<!--<a href="#!"><i class="material-icons">grade</i></a>-->
+					<ul style="display:block">
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">playlist_add</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">thumb_up</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">chat_bubble_outline</i>2</a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a href="#!"><i class="material-icons">launch</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+						</li>
+					</ul>
+					&nbsp;
+					<!--<a href="#!"><i class="material-icons">library_music</i></a>-->
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script>
+	$(function(){
+		$(document).ready(function(){
+			$('.collapsible').collapsible({
+				accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+			});
+		});
+	});
+	</script>

@@ -1,0 +1,336 @@
+	<!-- ナビゲーション -->
+	<nav class="">
+		<div class="nav-wrapper">
+			<a href="./#/" class="brand-logo">プレイリストシェア</a>
+			<a href="#" data-activates="mobile-phone" class="button-collapse"><i class="material-icons">menu</i></a>
+			<!-- PC画面 -->
+			<ul class="right hide-on-med-and-down">
+				<!-- 検索欄 -->
+				<li>
+					<form>
+						<div class="input-field hoverable" style="border-radius:5px 5px 5px 5px">
+							<input id="search" type="search" placeholder="artist, music, username...etc" style="width:400px;border-radius:5px 5px 5px 5px" required>
+							<label for="search"><i class="material-icons">search</i></label>
+							<i class="material-icons">close</i>
+						</div>
+					</form>
+				</li>
+				<li><a class="modal-trigger" href="#regist_modal">ユーザ登録</a></li>
+				<li><a href="#">プレイリスト登録</a></li>
+			</ul>
+			<!-- レスポンシブバージョン -->
+			<ul class="side-nav black" id="mobile-phone">
+				<!-- 検索欄 -->
+				<li>
+					<form>
+						<div class="input-field hoverable" style="border-radius:5px 5px 5px 5px">
+							<input id="search" type="search" style="width:300px;border-radius:5px 5px 5px 5px" required>
+							<label for="search"><i class="material-icons">search</i></label>
+							<i class="material-icons">close</i>
+						</div>
+					</form>
+				</li>
+				<li><a class="modal-trigger" href="#regist_modal">ユーザ登録</a></li>
+				<li><a href="#">プレイリスト登録</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- モーダルウィンドウ -->
+	<div id="regist_modal" class="modal">
+		<div class="modal-content">
+			<!-- Sign　Up -->
+			<form action="" method="POST">
+				<div class="row">
+					<div class="input-field col l12 m12 s12">
+						<input type="text" id="nickname" class="validate">
+						<label for="nickname">ニックネーム</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l12 m12 s12">
+						<input type="email" id="email" class="validate">
+						<label for="email">メールアドレス</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l12 m12 s12">
+						<input type="password" id="password" class="validate">
+						<label for="password">パスワード</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col l12 m12 s12">
+						<input type="password" id="confirm_password" class="validate">
+						<label for="confirm_password">パスワード(確認)</label>
+					</div>
+				</div>
+				<button class="btn waves-effect waves-light" type="submit" name="regist" style="width:100%">Sign Up</button>
+			</form>
+			<hr style="margin:7% auto 2% auto">
+			<p class="center-align">アプリケーション認証</p>
+			<button class="btn waves-effect waves-light blue darken-1" type="button" name="twitter" style="width:100%;margin:3% auto;">Twitter</button>
+			<button class="btn waves-effect waves-light indigo darken-1" type="button" name="facebook" style="width:100%;margin:3% auto;">Facebook</button>
+			<button class="btn waves-effect waves-light red darken-3" type="button" name="google" style="width:100%;margin:3% auto;">GoogleAccount</button>
+			
+		</div>
+	</div>
+	<!-- end Modal window -->
+	
+	<div class="row">
+		<!-- スマホじゃない場合は普通にジャンルなどを表示 -->
+		<div class="col m3 l3 hide-on-small-only">
+			<!-- ジャンルの表示 -->
+			<ul class="collection with-header" style="margin-top:12px;">
+				<li class="collection-header"><h6>ジャンル</h6></li>
+				<li><a href="./#/music" class="collection-item active">J-POP</a></li>
+				<li><a href="#!" class="collection-item">K-POP</a></li>
+				<li><a href="#!" class="collection-item">R&amp;B</a></li>
+				<li><a href="#!" class="collection-item">Rock</a></li>
+				<li><a href="#!" class="collection-item">PunkRock</a></li>
+				<li><a href="#!" class="collection-item">EDM</a></li>
+				<li><a href="#!" class="collection-item">Techno</a></li>
+				<li><a href="#!" class="collection-item">House</a></li>
+				<li><a href="#!" class="collection-item">HipHop</a></li>
+				<li><a href="#!" class="collection-item">Reggae</a></li>
+				<li><a href="#!" class="collection-item">Metal</a></li>
+				<li><a href="#!" class="collection-item">Jazz</a></li>
+				<li><a href="#!" class="collection-item">Classical</a></li>
+				<li><a href="#!" class="collection-item">Country</a></li>
+			</ul>
+			<!-- プレイリストの表示 -->
+			<ul class="collection with-header" style="margin-top:12px;">
+				<li class="collection-header"><h6>プレイリスト</h6></li>
+				<li><a href="#!" class="collection-item">J-POP</a></li>
+				<li><a href="#!" class="collection-item">K-POP</a></li>
+				<li><a href="#!" class="collection-item">R&amp;B</a></li>
+				<li><a href="#!" class="collection-item">Rock</a></li>
+				<li><a href="#!" class="collection-item">PunkRock</a></li>
+				<li><a href="#!" class="collection-item">EDM</a></li>
+				<li><a href="#!" class="collection-item">Techno</a></li>
+				<li><a href="#!" class="collection-item">House</a></li>
+				<li><a href="#!" class="collection-item">HipHop</a></li>
+				<li><a href="#!" class="collection-item">Reggae</a></li>
+				<li><a href="#!" class="collection-item">Metal</a></li>
+				<li><a href="#!" class="collection-item">Jazz</a></li>
+				<li><a href="#!" class="collection-item">Classical</a></li>
+				<li><a href="#!" class="collection-item">Country</a></li>
+			</ul>
+		</div>
+		<div class="col s12 hide-on-med-and-up">
+		<!-- ジャンルの表示 -->
+			<ul class="collapsible" data-collapsible="accordion">
+				<li>
+					<div class="collapsible-header">
+						ジャンル
+					</div>
+					<div class="collapsible-body">
+						<ul class="collection">
+							<li><a href="http://localhost/play_list/#/music" class="collection-item active">J-POP</a></li>
+							<li><a href="#!" class="collection-item">K-POP</a></li>
+							<li><a href="#!" class="collection-item">R&amp;B</a></li>
+							<li><a href="#!" class="collection-item">Rock</a></li>
+							<li><a href="#!" class="collection-item">PunkRock</a></li>
+							<li><a href="#!" class="collection-item">EDM</a></li>
+							<li><a href="#!" class="collection-item">Techno</a></li>
+							<li><a href="#!" class="collection-item">House</a></li>
+							<li><a href="#!" class="collection-item">HipHop</a></li>
+							<li><a href="#!" class="collection-item">Reggae</a></li>
+							<li><a href="#!" class="collection-item">Metal</a></li>
+							<li><a href="#!" class="collection-item">Jazz</a></li>
+							<li><a href="#!" class="collection-item">Classical</a></li>
+							<li><a href="#!" class="collection-item">Country</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<!-- プレイリストの表示 -->
+			<ul class="collapsible" data-collapsible="accordion">
+				<li>
+					<div class="collapsible-header">
+						プレイリスト
+					</div>
+					<div class="collapsible-body">
+						<ul class="collection">
+							<li><a href="http://localhost/play_list/#/music" class="collection-item">J-POP</a></li>
+							<li><a href="#!" class="collection-item">K-POP</a></li>
+							<li><a href="#!" class="collection-item">R&amp;B</a></li>
+							<li><a href="#!" class="collection-item">Rock</a></li>
+							<li><a href="#!" class="collection-item">PunkRock</a></li>
+							<li><a href="#!" class="collection-item">EDM</a></li>
+							<li><a href="#!" class="collection-item">Techno</a></li>
+							<li><a href="#!" class="collection-item">House</a></li>
+							<li><a href="#!" class="collection-item">HipHop</a></li>
+							<li><a href="#!" class="collection-item">Reggae</a></li>
+							<li><a href="#!" class="collection-item">Metal</a></li>
+							<li><a href="#!" class="collection-item">Jazz</a></li>
+							<li><a href="#!" class="collection-item">Classical</a></li>
+							<li><a href="#!" class="collection-item">Country</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="col s12 m9 l9">
+			<!-- フィルタリングの設定 -->
+			<ul class="collection">
+				<li class="collection-item">
+					<h5>表示設定</h5>
+					<form action="" method="GET">
+						<table>
+							<tr>
+								<td>	
+									<input name="sort" type="radio" id="good" checked>
+									<label for="good">いいねが多い順</label>
+								</td>
+								<td>
+									<input name="between" type="radio" id="nothing" checked>
+									<label for="nothing">指定なし</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input name="sort" type="radio" id="timestamp">
+									<label for="timestamp">投稿日時が新しい順</label>
+								</td>
+								<td>
+									<input name="between" type="radio" id="a_day">
+									<label for="a_day">24時間以内</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input name="sort" type="radio" id="mylist">
+									<label for="mylist">マイリス数が多い順</label>
+								</td>
+								<td>
+									<input name="between" type="radio" id="a_week">
+									<label for="a_week">1週間以内</label>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</li>
+			</ul>
+			<ul class="collection with-header" style="margin-top:12px;">
+				<li class="collection-header"><h6>プレイリストランキング</h6></li>
+				<li class="collection-item avatar">
+					<img src="images/yeoman.png" alt="" class="circle">
+					<span class="title" style="font-weight:bold">ふぇれっと</span>
+					<p>
+						Maroon5のSugerって曲めっちゃいいよ！！<br>
+						https://www.youtube.com
+					</p>
+					<!--<a href="#!"><i class="material-icons">grade</i></a>-->
+					<ul style="display:block">
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">playlist_add</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">thumb_up</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">chat_bubble_outline</i>2</a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">launch</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+						</li>
+					</ul>
+					&nbsp;
+					<!--<a href="#!"><i class="material-icons">library_music</i></a>-->
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle">folder</i>
+					<span class="title">Title</span>
+					<p>First Line <br>
+					 Second Line
+					</p>
+					<!--<a href="#!"><i class="material-icons">grade</i></a>-->
+					<ul style="display:block">
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">playlist_add</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">thumb_up</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">chat_bubble_outline</i>2</a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">launch</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+						</li>
+					</ul>
+					&nbsp;
+					<!--<a href="#!"><i class="material-icons">library_music</i></a>-->
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle green">insert_chart</i>
+					<span class="title">Title</span>
+					<p>First Line <br>
+						Second Line
+					</p>
+					<!--<a href="#!"><i class="material-icons">grade</i></a>-->
+					<ul style="display:block">
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">playlist_add</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">thumb_up</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">chat_bubble_outline</i>2</a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">launch</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+						</li>
+					</ul>
+					&nbsp;
+					<!--<a href="#!"><i class="material-icons">library_music</i></a>-->
+				</li>
+				<li class="collection-item avatar">
+					<i class="material-icons circle red">play_arrow</i>
+					<span class="title">Title</span>
+					<p>First Line <br>
+						Second Line
+					</p>
+					<!--<a href="#!"><i class="material-icons">grade</i></a>-->
+					<ul style="display:block">
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">playlist_add</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">thumb_up</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">chat_bubble_outline</i>2</a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+							<a class="modal-trigger" href="#regist_modal"><i class="material-icons">launch</i></a>
+						</li>
+						<li style="display:block;float:left;width:20%">
+						</li>
+					</ul>
+					&nbsp;
+					<!--<a href="#!"><i class="material-icons">library_music</i></a>-->
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script>
+	$(function(){
+		$(document).ready(function(){
+			$(".button-collapse").sideNav();
+			$(".modal-trigger").leanModal();
+			$('.collapsible').collapsible({
+				accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+			});
+		});
+	});
+	</script>
